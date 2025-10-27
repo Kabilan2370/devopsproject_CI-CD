@@ -3,7 +3,7 @@ pipeline {
 
     environment {
         DOCKERHUB_CREDENTIALS = credentials('dockerHub')
-        IMAGE_NAME = "kabilan2003/devopsproject_CI-CD"
+        IMAGE_NAME = "kabilan2003/devopsproject_ci-cd"
     }
 
     stages {
