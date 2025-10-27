@@ -2,14 +2,14 @@ pipeline {
     agent any
 
     environment {
-        DOCKERHUB_CREDENTIALS = credentials('dockerhub-creds')
-        IMAGE_NAME = "your-dockerhub-username/jenkins-docker-ci-cd"
+        DOCKERHUB_CREDENTIALS = credentials('dockerHub')
+        IMAGE_NAME = "kabilan2003/devopsproject_CI-CD"
     }
 
     stages {
         stage('Checkout') {
             steps {
-                git branch: 'main', url: 'https://github.com/your-github-username/jenkins-docker-ci-cd.git'
+                git branch: 'main', url: 'https://github.com/Kabilan2370/devopsproject_CI-CD.git'
             }
         }
 
